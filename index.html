@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Toko Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Selamat Datang di Toko Online Kami</h2>
+            <p>Temukan produk terbaik dengan harga terjangkau.</p>
+            <a href="#products" class="btn">Belanja Sekarang</a>
+        </div>
+    </section>
+    
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="img/product1.jpg" alt="Produk 1">
+                    <h3>Produk 1</h3>
+                    <p>Rp100.000</p>
+                    <button class="btn">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/product2.jpg" alt="Produk 2">
+                    <h3>Produk 2</h3>
+                    <p>Rp200.000</p>
+                    <button class="btn">Tambah ke Keranjang</button>
+                </div>
+                <!-- Tambah produk lainnya sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah toko online terpercaya yang menyediakan berbagai macam produk berkualitas dengan harga bersaing.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Toko Online. Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
