@@ -1,0 +1,158 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Products Section */
+.products {
+    padding: 20px 0;
+}
+
+.products .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products .product-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.products .product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.products .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px 0;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        float: none;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .products .product-item {
+        flex: 1 1 100%;
+    }
+}
